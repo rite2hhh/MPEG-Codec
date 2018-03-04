@@ -8,11 +8,17 @@ An MPEG encoder has various blocks. It takes in an uncompressed video sequence (
 Most encoders have the following blocks to convert a raw uncompressed video sequence to MPEG, some with slight modifications for better performance or video quality.
 
 (a) RGB - YCbCr
+
 (b) Pass (for I-Frames)/ Subtract(for P-/B-Frames)
+
 (b) Discrete Cosine Transform (DCT)
+
 (c) Quantization
+
 (d) Entropy/ Source Coding
+
 (e) Multiplexer
+
 (f) Source Buffer
 
 Files included in this repository and their use loosely align with each of these blocks:
