@@ -2,7 +2,7 @@
 MPEG Codec implemented in MATLAB for a class project. Implemented the Encoder and Decoder using helper functions. Each helper function defined to perform a specific task for the Encoder or Decoder.
 
 
-MPEG Encoder:
+MPEG Encoder/Decoder:
 -------------
 An MPEG encoder has various blocks. It takes in an uncompressed video sequence (generally in RGB color space) as its input, converts it to YCbCr color space. In this color space, we have a Luma component (Y), and two Chroma Components (Cb & Cr). For any image, maximum information is retained in the Luma component, so we can leave this luma component out of the compression equation/ perform minimal compression and get a high definition image. Since we have the Chroma components isolated, we can apply high compression to them to save bandwidth, and still recover a frame similar to the original uncompressed frame at the output.
 Most encoders have the following blocks to convert a raw uncompressed video sequence to MPEG, some with slight modifications for better performance or video quality.
